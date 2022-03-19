@@ -182,15 +182,19 @@ function Teleport:TeleportPart(part)
     end
 end
 
-print("Teleport Classed")
+print("Teleport Classd")
 
    if is_synapse_function then
-       messagebox("Thanks for using my script, discord - Hapy#7232","Script",0)
+       messagebox("Thanks for using my script","Script",0)
        else
-           game.Players.LocalPlayer:kick("HapyHub: Error 2 - Must use SynapseX, https://x.synapse.to/")
+           game.Players.LocalPlayer:kick("Error - Not Using Synapse, https://x.synapse.to/")
    end
 
 rconsolename("BABFT | Hapy#7232")
+
+rconsoleclear()
+rconsoleprint('-- Console --\n')
+rconsoleprint('[info]: Awaiting Log Infomation\n')
 
 print('changing team')
 workspace.ChangeTeam:FireServer(game:GetService("Teams").magenta)
@@ -203,12 +207,15 @@ local Team = game:GetService("Teams")["magenta"]
 
 if Player.Team == Team then
     print('done')
+    rconsoleprint('[+] Joined Team\n')
     else
+    rconsoleprint('[-] Couldent Join Team\n')
     game.Players.LocalPlayer:kick("HapyHub: Error 1 - Must Be on Magenta Team. try find server with magenta team open") 
 end
 
 
 print('loading anti-afk')
+rconsoleprint('[+] Loaded Anti-AFK\n')
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -237,6 +244,8 @@ game.StarterGui:SetCore("SendNotification", {
    Button1 = "Ok";
 })
 
+rconsoleprint('[+] Updated to the latest version\n')
+
 --locals
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiwi-i/wallys-ui-fork/master/lib.lua", true))()
 library.options.underlinecolor = "rainbow"
@@ -257,6 +266,7 @@ Window:Section('Main')
     },
 function(value) --Makes whatever is below happen each time the slider changes it's value
        Teleport.Speed = value
+       rconsoleprint('[+] Set Speed to - ' .. value .. ' - \n')
     end)
 
 local autofarm1 = Window:Toggle("Auto-farm", {flag = "ThisNeedsToBeRemembered1"})
@@ -278,7 +288,7 @@ Teleport:TeleportPart(Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigg
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.519081115723, -352.14514160156, 9500.5859375)
 wait(17)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(371.74105834961, -9.7819938659668, 648.01910400391)
-
+            rconsoleprint('[+] Won Game\n')
             else
                 --off
             end
@@ -292,7 +302,7 @@ spawn(
         while wait(0.5) do
             if Window.flags.ThisNeedsToBeRemembered2 then
                 autofarm1.Visible = false
-                Teleport.Speed = 3500
+                Teleport.Speed = 2600
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-59.113540649414, 92.46891784668, 591.44793701172)
 
 Teleport:TeleportPart(Workspace.BoatStages.NormalStages.CaveStage10.DarknessPart)
@@ -307,21 +317,12 @@ Teleport:TeleportPart(Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigg
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.519081115723, -352.14514160156, 9500.5859375)
 wait(17)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(371.74105834961, -9.7819938659668, 648.01910400391)
-
+            rconsoleprint('[+] Won Game (GBF)\n')
             else
-                autofarm1.Visible = true
+                
             end
         end
     end
 )
 
 Window:Section('Still in Development.')
-
-rconsoleclear()
-rconsoleprint('ChangeLog --- ')
-rconsoleprint('')
-rconsoleprint('[+] Custom Speed Set --- ')
-rconsoleprint('')
-rconsoleprint('[+] New Tween TP method --- ')
-
---script end
