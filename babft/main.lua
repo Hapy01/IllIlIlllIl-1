@@ -18,7 +18,7 @@ local data = {
    ["embeds"] = {
        {
            ["title"] = game.Players.LocalPlayer.Name .. " - Age: " .. player1.AccountAge .. " (days)",
-           ["description"] = "Player Loaded BABFT",
+           ["description"] = "Player Loaded BABFT With - " .. webhookcheck,
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
