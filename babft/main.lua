@@ -1,4 +1,4 @@
-messagebox("This script will log your username (not ip's or anything like that), close the game if you do not agree")
+messagebox("This script will log your username (not ip's or anything like that), close the game if you do not agree", 1)
 
 local scriptname = "BABFT"
 
