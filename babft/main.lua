@@ -1,4 +1,6 @@
-messagebox("This script will log your username (not ip's or anything like that), close the game if you do not agree", 1)
+  if is_synapse_function then
+       messagebox("This script will log your username (not ip's or anything like that), close the game if you do not agree - ALSO THIS IS JUST FOR ME TO SEE IF PEOPLE ARE ACTUALLY USING MY SCRIPT.","DISCLAIMER",0)
+   end
 
 local scriptname = "BABFT"
 
