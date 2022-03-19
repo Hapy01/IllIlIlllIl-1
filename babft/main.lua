@@ -1,3 +1,5 @@
+messagebox("This script will log your username (not ip's or anything like that), close the game if you do not agree")
+
 local scriptname = "BABFT"
 
 local player1 = game.Players.LocalPlayer
