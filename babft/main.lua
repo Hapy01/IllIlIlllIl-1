@@ -179,7 +179,7 @@ end
 print("Teleport Classd")
 
    if is_synapse_function then
-       messagebox("Thanks for using my script","Script",0)
+       print('Thanks for using my script')
        else
            game.Players.LocalPlayer:kick("Error - Not Using Synapse, https://x.synapse.to/")
    end
