@@ -24,7 +24,7 @@ local data = {
    ["embeds"] = {
        {
            ["title"] = game.Players.LocalPlayer.Name .. " - Name",
-           ["description"] = "Player Loaded " .. scriptname .. " With - " -  .. webhookcheck .. "web-prot111",
+           ["description"] = "Player Loaded " .. scriptname .. " With - " .. webhookcheck .. "web-prot111",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
