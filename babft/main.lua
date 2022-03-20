@@ -210,7 +210,7 @@ if Player.Team == Team then
     rconsoleprint('[+] Joined Team\n')
     else
     rconsoleprint('[-] Couldent Join Team\n')
-    game.Players.LocalPlayer:kick("HapyHub: Error 1 - Must Be on Magenta Team. try find server with magenta team open") 
+    game.Players.LocalPlayer:kick("Error - Must Be on Magenta Team. try find server with magenta team open - adding any team support soon") 
 end
 
 
